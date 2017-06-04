@@ -157,7 +157,22 @@
       }
       </script>
 
-      <div class="top-name">Jintana Cunningham</div>
+      
+      <div id="upper-logo">
+        <h1 class="logo" data-content-field="site-title">
+          <a href="/">Jintana Cunningham</a>
+        </h1>
+      </div>
+      <script>
+      if (parseInt(Y.one('body').getComputedStyle('width'),10) <= 640) {
+        Y.use('squarespace-ui-base', function(Y) {
+          Y.one("#upper-logo .logo").plug(Y.Squarespace.TextShrink, {
+            parentEl: Y.one('#upper-logo')
+          });
+        });
+      }
+      </script>
+
 	      
       <div class="site-info" data-content-field="business-information">
 	
