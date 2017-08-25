@@ -2,25 +2,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+		
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
     <title>Jintana Cunningham— Product Designer & Front-end Developer</title>
     <link href="css666.css" rel="stylesheet" type="text/css" />
-    <script src="website2.js"></script> 
+    <script src="website2.js"></script>
+	 
 <!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="typed.js"> </script> -->
 	<script type="text/javascript"></script>
+	
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="hero" id="hero">
 	<div class="hero__content">
-    <img src="FullSizeRender (3).jpg" width=100% height=70% class="hero__profile" alt="Jintana Cunningham" />
+    <img src="FullSizeRender (3).jpg" width=100% height=55% class="hero__profile" alt="Jintana Cunningham" />
     <div class="hero__text">
       <h1 id="hero-text"> <img class="hero__waving" src="" alt=""> <span id="hero-text-content"></span></h1>
     </div>
 	</div>
 
+<style>* {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
 
+
+.btn{      /* menu bar*/
+  color:white;
+  background:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  font-size:16px;
+  text-decoration:none;
+  letter-spacing:2px; 
+  text-transform:uppercase;
+	position: relative;
+	top:-1150px;
+	float: right;
+	right: 30px;
+}
+
+.btn:hover{
+  border:none;
+  background:rgba(0, 03 0, 0.4);
+  background:#fff;
+  padding:20px 20px; #000;
+  color:#1b1b1b;
+}
+
+
+</style>
+</head>
+<body>
+
+<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+
+    
+    <a href="#" class="btn">Contact</a>
+    <a href="#" class="btn">Experience</a>
+    <a href="#" class="btn">About</a>
+  
 
 <script>
 	var Typed	= new Typed('#hero__text,{
@@ -41,21 +87,95 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </style>
 <body class="w3-black">
   
-  
-<!-- Page Content -->
-<!--div class="w3-padding-large" id="main"> -->
-  <!-- Header/Home 
-    <img src="FullSizeRender (3).jpg" alt="Jintana" class="w3-image" width=80% height=70%>
-  </header> -->
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-dark-grey">About Jintana</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p> I'm a <span class="about__content--important">Product Designer (UI/UX) and Front-End Developer</span> based in <span class="about__content--important">Ithaca, NY</span>. I'm currently a sophomore at Cornell University studying Information Science and Business. I grew up in CHina, Thailand, and Japan. I'm interested in social justice, photography, and design.
-    <br>
-		<a href = "resume.pdf" style="color: white"> Resume</a>
-		</br>
+    <p> I'm a <span class="about__content--important">Product Designer (UI/UX) and Front-End Developer</span> based in <span class="about__content--important">Ithaca, NY</span>. I'm currently a sophomore at Cornell University studying Information Science and Business. I grew up in CHina, Thailand, and Japan. I'm interested in social justice, photography, and design. Over the summer I taught myself how to code for the web, thus resulting in this website. 
+    <br><br>
+		
+		<div class ="resume">
+		<button class="w3-button w3-light-grey w3-padding-large">
+		<a href = "resume.pdf" style="color: black"><b>Resume</b></a>
+		</div>
+		
+
+		</br></br>
+		
+		
+		<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-dark-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+    
+		
+<style>
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+	font-weight:bold;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+
+<div class="container">
+  <img src="download.png" alt="Freelance" class="image" style="width:100%" align="left">
+  <div class="middle">
+    <div class="text">Lending Library</div>
+  </div>
+</div>
+<p> My current project is to help develop Cornell's Lending Library Program.</p>
+
+
+<div class="container">
+  <img src="download.png" alt="Prisoner Express" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Prisoner Express</div>
+  </div>
+</div>
+  
+<div class="container">
+  <img src="download.png" alt="Freelance" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">Freelance</div>
+  </div>
+</div>
+
+
+
+
 		</p>
     <h3 class="w3-padding-16 w3-text-dark-grey">My Skills</h3>
     <p class="w3-wide">Photography</p>
@@ -71,7 +191,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <div class="w3-dark-grey" style="height:28px;width:80%"></div>
     </div><br>
    
-  <!-- Portfolio Section -->
+  <!-- Photo portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
     <h2 class="w3-text-dark-grey">My Photos</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -83,6 +203,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <img src="train.jpg" style="width:100%">
         <img src="flower.jpg" style="width:100%">
 				 <img src="sweet.jpg" style="width:100%">
+				 <img src="korea.jpg" style="width:100%">
+				 <img src="falls.jpg" style="width:100%">
       </div>
 
       <div class="w3-half">
@@ -90,11 +212,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <img src="island2.jpg" style="width:100%">
         <img src="amy.jpg" style="width:100%">
         <img src="island.jpg" style="width:100%">
+				<img src="leaves.jpg" style="width:100%">
       </div>
     <!-- End photo grid -->
     </div>
   <!-- End Portfolio Section -->
   </div>
+
+<!--Services-->
+<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-dark-grey">Services</h2>
+    <hr style="width:200px" class="w3-opacity">
+<ul>
+	<li>
+		<p>Web Design</p>
+		<p> Photo Editing</p>
+		<p> Branding   </p>
+	</li>
+	
+</ul>
+
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -102,13 +239,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
+			<div class="headshot">
+			<img src="IMG_7879.jpg">
+				</div>
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Ithaca, US</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 607 229 4265</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: jc2747@cornell.edu</p>
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
+    <form method ="POST" action="mailto:jc2747@cornell.edu">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
@@ -116,6 +256,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
+					
+						
+<?php
+
+
+ $first_name = $_POST('first_name');
+ $last_name = $_POST('last_name') ;
+  $email = $_POST('email');
+	 $message = $_POST('message');
+	 $to = "jc2747@cornell.edu";
+	 $subject = "New Message";
+	 
+	mail ($to,$subject,$message, "From: " , $first_name, $last_name);
+	
+	 echo "Thank You";
+ ?>
         </button>
       </p>
     </form>
