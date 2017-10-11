@@ -202,7 +202,7 @@ div.desc {
     clear: both;
 }
 
-
+/*Image styling*/
 .horiz-left {
    padding:10px;
    float:left;
@@ -230,4 +230,28 @@ div.desc {
    float:right;
    width: 450px;
    height:600px;
+}
+
+.center{
+  width:580px;
+  height:410px;
+  padding-bottom:10px;
+  margin-bottom:40px;
+  position:relative;
+}
+
+/*Paragraph styling*/
+.info{
+  margin-left: 60px;
+  margin-right:60px;
+  top:-60px;
+  position:relative;
+  text-align:center;
+}
+
+.header{
+  font-family: Helvetica;
+  font-size: 19px;
+  text-align:center;
+  margin-top:1px;
 }
