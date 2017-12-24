@@ -1,0 +1,399 @@
+/**SanFrancisco**/
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+h6, p, body, li{
+    font-family: "San Francisco","Helvetica Nueue", sans-serif;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    color: #4c4c4c;
+    font-weight: 400;
+    letter-spacing: .01em;
+}
+
+h1, h2 {
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  color: #4c4c4c;
+  font-weight: 400;
+  letter-spacing: -.02em;
+}
+
+h3, h4, h5 {
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  color: #4c4c4c;
+  font-weight: 400;
+  letter-spacing: .01em;
+}
+
+
+a {
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+a:hover{
+  color:#4c4c4c;
+}
+
+.u-coral{
+    color:#F1756E;
+}
+
+.u-blue{
+  color:#7CA6D6;
+}
+
+.u-dark {
+  color: #4c4c4c;
+}
+
+.u-grey {
+    color:#9D9D9D;
+}
+
+.u-bold {
+  font-weight:600;
+}
+
+.u-med{
+  font-weight: 400;
+}
+
+#portfolio a{
+  color: #7CA6D6;
+  font-weight: 400;
+}
+
+#portfolio a:hover{
+  color: #4D6785;
+  font-weight: 400;
+}
+
+.mockup {
+  width: 100%;
+  margin-bottom:40px;
+}
+
+/*Components*/
+
+ul.header-links--inline li{
+    display: inline-block;
+    margin-right: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.button{
+  height:48px;
+  text-transform: none;
+  font-size: 16px;
+  line-height:44px;
+  font-weight:600;
+}
+
+.project {
+  -webkit-transform: scale(1.00);
+  transition: 0.3s;
+}
+.project:hover {
+  -webkit-transform: scale(1.02);
+  transition: 0.25s;
+}
+
+.portfolio {
+  background-color: #fcfcfc;
+  margin-top: -48px;
+}
+
+img {
+  display:block;
+  margin:auto;
+}
+
+.card{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.header {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.end {
+  padding-top: 48px;
+  padding-bottom: 120px;
+}
+
+.avatar{
+  width: 100%;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.24), 0 9px 25px 1px rgba(0,0,0,0.18), 0 10px 45px 0 rgba(0,0,0,0.12);
+  margin-bottom:40px;
+}
+
+.card-first{
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+
+
+/* photography section */
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 10px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Image styling*/
+.horiz-left {
+   padding:10px;
+   float:left;
+   width:500px;
+  height:400px;
+}
+
+.horiz-right{
+  padding:10px;
+  float:right;
+  width:500px;
+  height:400px;
+}
+
+.vert-left{
+  padding:10px;
+  float:left;
+  width:400px;
+  height:500px;
+}
+
+.vert-right{
+  padding:10px;
+   position: relative;
+   float:right;
+   width: 450px;
+   height:600px;
+}
+
+.center{
+  width:580px;
+  height:410px;
+  padding-bottom:10px;
+  margin-bottom:40px;
+  position:relative;
+}
+
+/*Paragraph styling*/
+.info{
+  margin-left: 60px;
+  margin-right:60px;
+  top:-60px;
+  position:relative;
+  text-align:center;
+}
+
+.header{
+  font-family: Helvetica;
+  font-size: 19px;
+  text-align:center;
+  margin-top:1px;
+}
+
+
+/*about*/
+
+/* Thanks to codepen.io/alaingalvan for suggesting this color variable: */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+.soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 48px;
+    padding: 4.8rem;
+    text-align: center;
+}
+
+.soc li {
+    display: inline-block;
+    margin: 12px;
+    margin: 1.2rem;
+}
+
+.soc a, .soc svg {
+    display: block;
+}
+
+.soc a {
+    position: relative;
+    height: 96px;
+    height: 9.6rem;
+    width: 96px;
+    width: 9.6rem;
+}
+
+.soc svg {
+    height: 100%;
+    width: 100%;
+}
+
+.soc em {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -.75em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.icon-1:hover, .icon-2:hover, .icon-3:hover {
+    border-radius: 100%;
+    color: #0e1a25;
+    fill: #0e1a25;
+    transform: scale(1.25);
+    transition: background-color .5s, transform .5s ease-out;
+}
+
+.icon-1 {
+    color: #d94a26;
+    fill: #d94a26;
+}
+
+.icon-1:hover {
+    background: #d94a26;
+}
+
+.icon-2 {
+    color: #d96e26;
+    fill: #d96e26;
+}
+
+.icon-2:hover {
+    background: #d96e26;
+}
+
+.icon-3 {
+    color: #d99126;
+    fill: #d99126;
+}
+
+.icon-3:hover {
+    background: #d99126;
+}
+
+
+
+.buttonz {
+   transition:all .25s ease-in-out;
+   -moz-transition:all .25s ease-in-out;
+   -webkit-transition:all .25s ease-in-out;
+
+  float:left;
+  height:30px;
+  width:30px;
+  margin-left:15px;
+  opacity:.5;
+}
+
+.buttonz:hover {
+   transition:all .25s ease-in-out;
+   -moz-transition:all .25s ease-in-out;
+   -webkit-transition:all .25s ease-in-out;
+  opacity:1;
+
+  margin-top:-10px;
+
+}
+
+.buttonz img {
+  margin-top:-10px;
+  margin-left:-10px;
+  background:transparent;
+}
+
+/* instagram image fix */
+#img_2 {
+  margin:0;
+    background:transparent;
+}
+
+/*
+.social-media-container img {
+    transition: 100ms;
+    width: 20px;
+}
+
+.medium:hover {
+    background-color: #3d5b99; */
+
+
+/* social media css */
