@@ -383,7 +383,7 @@ html {
 /* instagram image fix */
 #img_2 {
   margin:0;
-    background:transparent;
+    padding-left: 10px;
 }
 
 /*
