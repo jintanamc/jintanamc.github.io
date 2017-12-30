@@ -142,6 +142,9 @@ img {
   margin-right: auto;
 }
 
+
+
+
 .end {
   padding-top: 48px;
   padding-bottom: 120px;
@@ -376,14 +379,22 @@ html {
 
 .buttonz img {
   margin-top:-10px;
-  margin-left:-10px;
+  margin-left:-10px !important;
   background:transparent;
 }
 
+
+.buttonz{
+  left:22px;
+  top:0px;
+  position: relative;
+}
 /* instagram image fix */
 #img_2 {
   margin:0;
-    padding-left: 10px;
+
+  position: relative;
+  left:34px;
 }
 
 /*
