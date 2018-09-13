@@ -10,3 +10,4 @@ links.forEach(function (element) {
 
 
 // typing effect
+ 
