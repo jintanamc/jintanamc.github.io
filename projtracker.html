@@ -79,7 +79,7 @@ We selected target audiences we had physical access to and brainstormed 3 differ
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
-  <img class="images/smoker_persona.png" id="img01">
+  <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
 
@@ -89,7 +89,7 @@ We selected target audiences we had physical access to and brainstormed 3 differ
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
-  <img class="images/smoker_persona.png" id="img01">
+  <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
 
@@ -100,26 +100,34 @@ We selected target audiences we had physical access to and brainstormed 3 differ
 <h4>Interview Findings</h4>
 <br />
 <p>
-Through our interviews with potential users, we found:
+Through our interviews with potential users, we found patterns in what they had to say:
 </p>
 
-<ul>
 
+<div class="myDivElement">
+<ul class = "right">
 <li>
   People sometimes need incentive to continue tracking
 </li>
 <li>
-  Incentive to continue
+  Tracking should be quick
 </li>
 
+<li>
+  Desire to customize
 </ul>
+</div>
+
+
 
 
 <br /><br />
 <h4>Market Research</h4>
 <br />
 <p>
-  <ul>
+</ul>
+
+
 
 
 <b>Notebook / Pen & Paper</b>
@@ -171,6 +179,27 @@ While it does take some of the user’s time to input their entry, we designed t
 <br /><br />
 <h5>Check out the live site: <a href="https://tm-project-tracker.herokuapp.com">Project Tracker</a> </h5>
 <p>Best experienced through mobile!</p>
+
+
+<!-- scoped means only affects this page -->
+<style scoped>
+
+.right{
+  padding-left: 50px;
+  text-align: left;
+}
+
+
+
+.myDivElement{
+  display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+
+</style>
+
 
 <script>
 // Get the modal
