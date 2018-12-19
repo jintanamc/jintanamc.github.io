@@ -27,7 +27,7 @@ h6, p, body, li{
 }
 
 h1, h2 {
-  font-family: "Libre Baskerville", serif;
+  font-family: Josefin Sans;
   letter-spacing: 0;
   margin-bottom: 0;
   color: #4c4c4c;
@@ -36,7 +36,7 @@ h1, h2 {
 }
 
 h3, h4, h5 {
-  font-family: "Libre Baskerville", serif;
+  font-family: Josefin Sans;
   letter-spacing: 0;
   margin-bottom: 0;
   color: #4c4c4c;
