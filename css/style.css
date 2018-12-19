@@ -43,6 +43,7 @@ h3, h4, h5 {
   color: #4c4c4c;
   font-weight: 400;
   letter-spacing: .01em;
+  text-align: center;
 }
 
 
@@ -250,7 +251,7 @@ div.desc {
   margin-right:80px;
   top:-60px;
   position:relative;
-  text-align:center;
+  /* text-align:center; */
 }
 
 .header{
