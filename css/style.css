@@ -24,6 +24,7 @@ h6, p, body, li{
     color: #4c4c4c;
     font-weight: 400;
     letter-spacing: .01em;
+    text-align: left;
 }
 
 h1, h2 {
@@ -245,8 +246,8 @@ div.desc {
 
 /*Paragraph styling*/
 .info{
-  margin-left: 60px;
-  margin-right:60px;
+  margin-left: 80px;
+  margin-right:80px;
   top:-60px;
   position:relative;
   text-align:center;
