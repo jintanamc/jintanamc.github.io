@@ -260,10 +260,12 @@ div.desc {
   margin-top:1px;
 }
 
+/* info under images */
+.imageinfo{
+  font-size: 20px;
+}
 
-/*about*/
 
-/* Thanks to codepen.io/alaingalvan for suggesting this color variable: */
 html {
     box-sizing: border-box;
 }
