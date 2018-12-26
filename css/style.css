@@ -17,6 +17,16 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
 }
 
+
+
+/* Josefin Sans */
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('JosefinSans-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+
+
 h6, p, body, li{
     font-family: "San Francisco","Helvetica Nueue", sans-serif;
     letter-spacing: 0;
