@@ -22,7 +22,7 @@
 /* Josefin Sans */
 @font-face {
   font-family: 'Josefin Sans';
-  src: url('JosefinSans-Regular.ttf'); /* IE9 Compat Modes */
+  src: url("JosefinSans-Regular.ttf"); /* IE9 Compat Modes */
 }
 
 
@@ -38,7 +38,7 @@ h6, p, body, li{
 }
 
 h1, h2 {
-  font-family: Josefin Sans;
+  font-family: Josefin Sans, sans-serif;
   letter-spacing: 0;
   margin-bottom: 0;
   color: #4c4c4c;
