@@ -211,6 +211,27 @@ div.desc {
     }
 }
 
+
+/* so that padding isnt too hardcore on mobile */
+/* @media only screen and (max-width: 500px){
+    .info {
+        margin-left:80px;
+        margin-right: 80px;
+    }
+} */
+
+
+@media (min-width:1025px) {
+  .info {
+      margin-left:140px;
+      margin-right: 140px;
+  }
+}
+
+
+
+
+
 .clearfix:after {
     content: "";
     display: table;
@@ -257,8 +278,8 @@ div.desc {
 
 /*Paragraph styling*/
 .info{
-  margin-left: 140px;
-  margin-right:140px;
+  /* margin-left: 140px;
+  margin-right:140px; */
   top:-60px;
   position:relative;
   text-align:center;
