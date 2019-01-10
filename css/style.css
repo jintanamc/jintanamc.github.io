@@ -230,7 +230,7 @@ div.desc {
 
 
 /* so that padding isnt too hardcore on mobile */
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 800px){
   .info {
       margin-left:20px;
       margin-right: 20px;
