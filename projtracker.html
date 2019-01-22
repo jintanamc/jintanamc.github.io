@@ -19,13 +19,19 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+
     <script src="https://use.fontawesome.com/62036b53a1.js"></script>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+  	<script type="text/javascript" src="slick/slick.min.js"></script>
+  	<script src="assets/js/waypoints.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -340,29 +346,35 @@ Overall, we see the value of our app compared to alternatives to be the categori
 
 </style>
 
-<!--
+
+
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+		if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+				document.getElementById("myBtn").style.opacity = "1";
+		} else {
+				document.getElementById("myBtn").style.opacity = "0";
+		}
+	}
+	function topFunction() {
+
+		var target = $('#hi');
+		if (target.length) {
+				var top = target.offset().top;
+				$('html,body').animate({scrollTop: top}, 500);
+				return false;
+		}
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+	</script>
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-</script> -->
+
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<script src="assets/js/waypoints.js"></script>
+
 
 
 
