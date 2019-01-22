@@ -511,3 +511,42 @@ html {
     width: 100%;
   }
 }
+
+
+
+
+/*
+.grow { transition: all .5s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+ */
+
+
+
+ @media only screen and (max-width: 800px){
+   .info {
+       margin-left:20px;
+       margin-right: 20px;
+   }
+ }
+
+/*
+
+
+  .slide{
+   position:relative;
+   cursor:pointer;
+   background:#e1e1e1;  color:white;
+   z-index:0;
+
+ }
+ .slide:before {
+   content: "";
+   position: absolute;
+   z-index:-1;
+   top: 0;  left: 0;  right: 0;  bottom: 0;
+   background: #DCEAF4;
+   transform: scaleX(0);
+   transform-origin: 0 50%;
+   transition: transform .5s ease-out;
+ }
+ .slide:hover:before{transform: scaleX(1);} */
