@@ -47,6 +47,28 @@ h6, p, body, li{
 
 
 
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #7CA6D6;
+}
+
+
+
+.button_slide {
+  color: #FFF;
+  border: 2px solid #7CA6D6;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #7CA6D6;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
 
 h1, h2 {
   font-family: Josefin Sans, sans-serif;
