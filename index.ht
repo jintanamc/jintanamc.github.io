@@ -497,7 +497,6 @@
 
 
 
-
     <div class="section-work" style="background-color:#FCFCFC">
       <div class="container">
         <div class="row">
@@ -515,15 +514,67 @@
                 </h6>
                 <h6 style="margin-bottom: 20px">Art and et cetera.
                 </h6>
+        <a class="button underline" href="other">View</a>
 
-                <a class="button" href="other">View</a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+
       <style scoped>
+
+
+/* .button:hover{
+text-decoration: underline;
+transition: 3s;
+} */
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: -5px;
+  background: #000;
+  height: 4px;
+  transition-property: left right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  right: 0;
+}
+
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+
         .typewriter h4 {
           overflow: hidden;
           /* Ensures the content is not revealed until the animation */
