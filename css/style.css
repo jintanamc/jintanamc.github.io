@@ -323,7 +323,7 @@ div.desc {
   margin-right:240px;
   top:-60px;
   position:relative;
-  text-align:center;
+  /* text-align:center; */
 }
 
 .header{
