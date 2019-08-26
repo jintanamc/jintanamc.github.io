@@ -68,7 +68,11 @@
           <a href="index">
             <h2 class="u-blue" style="margin-bottom:20px">Jintana Cunningham</h2>
           </a>
-          <h4 style="margin-bottom:35px">Aspiring UX designer studying Information Science at Cornell 👩🏻‍💻</h4>
+          <!-- <h4 style="margin-bottom:35px">Aspiring UX designer studying Information Science at Cornell 👩🏻‍💻</h4> -->
+          <div class="text-center">
+          <h4 style="margin-bottom:35px">Aspiring <span id="type"></span><span id="blinker">|</span> studying Information Science at Cornell 👩🏻‍💻</h4>
+          </div>
+
           <ul class="header-links--inline">
             <li class="u-grey"><a href=index>Portfolio</a></li>
             <li class="u-grey"><a href=about>About</a></li>
@@ -520,6 +524,80 @@
 </div>
 
 
+
+<script>
+
+class Typewriter {
+  constructor(id, arr){
+    this.el = document.getElementById(id);
+    this.period = 200;
+    this.interval = '';
+    this.deleteInterval = '';
+    this.word = '';
+    this.add = true;
+    this.textArray = arr;
+  }
+  type(){
+    var self = this;
+    this.letter = 0;
+    this.counter = 0;
+    clearInterval(this.interval);
+    this.interval = setInterval(function(){ self.addLetters(); }, this.period);
+  }
+  setWord(){
+    this.word = this.textArray[this.counter];
+  }
+  deleteLetters(){
+    if (this.letter > 0 && !this.add) {
+      this.letter--;
+      var textContent = this.el.textContent;
+      this.el.textContent = textContent.substring(0, this.letter);
+    } else if (this.letter === 0 && !this.add) {
+      this.add = true;
+      this.el.innerHTML = '';
+      this.counter++;
+      this.setWord();
+      this.startAdd();
+    }
+  }
+  addLetters(){
+    var self = this;
+    if (this.counter === this.textArray.length) {
+      this.type();
+    } else {
+      this.setWord();
+      if (this.letter < this.word.length && this.add) {
+        this.el.textContent += this.word[this.letter];
+        this.letter++;
+      } else if (this.letter === this.word.length && this.add) {
+        this.add = false;
+        document.getElementById('blinker').classList = "blink";
+        setTimeout(function () { self.startDelete(); }, 1500);
+      }
+    }
+  }
+  startDelete(){
+    var self = this;
+    document.getElementById('blinker').classList = "";
+    clearInterval(this.interval);
+    this.interval = setInterval(function () { self.deleteLetters(); }, this.period);
+  }
+  startAdd(){
+    var self = this;
+    clearInterval(this.interval);
+    this.interval = setInterval(function () { self.addLetters(); }, this.period);
+  }
+}
+
+var type = new Typewriter('type', ["Product Manager", "UX Designer"]);
+type.type();
+
+
+</script>
+
+
+
+
     <style scoped>
       /* .button:hover{
 text-decoration: underline;
@@ -574,46 +652,38 @@ transition: 3s;
       }
 
 
-      .typewriter h4 {
-        overflow: hidden;
-        /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid orange;
-        /* The typwriter cursor */
-        white-space: nowrap;
-        /* Keeps the content on a single line */
-        margin: 0 auto;
-        /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .15em;
-        /* Adjust as needed */
-        animation:
-          typing 3.5s steps(30, end),
-          blink-caret .5s step-end infinite;
-        /* animation-iteration-count: infinite; */
+
+
+/* typewriter effect */
+#type {
+  display: inline-block;
+}
+
+      #blinker {
+        background: #F4B9B2 !important;
+        background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
+        background: linear-gradient(45deg, #f857a8, #ff5858);
+        display: inline-block;
+        background-clip: text;
+        -webkit-background-clip: text;
+          color: transparent;
+
+      }
+      #blinker.blink {
+        animation-name: type;
+        animation-duration: .75s;
+        animation-iteration-count: infinite;
       }
 
-      /* The typing effect */
-      @keyframes typing {
-        from {
-          width: 0
+      @keyframes type {
+        0% {
+          opacity: 1;
         }
-
-        to {
-          width: 100%
+        100% {
+          opacity: 0;
         }
       }
 
-      /* The typewriter cursor effect */
-      @keyframes blink-caret {
-
-        from,
-        to {
-          border-color: transparent
-        }
-
-        50% {
-          border-color: orange
-        }
-      }
 
 
       @media only screen and (max-width: 1090px) {
