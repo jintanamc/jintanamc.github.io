@@ -70,7 +70,7 @@
           </a>
           <!-- <h4 style="margin-bottom:35px">Aspiring UX designer studying Information Science at Cornell 👩🏻‍💻</h4> -->
           <div class="text-center">
-          <h4 style="margin-bottom:35px; width:1000px">Aspiring <span id="type"></span><span id="blinker">|</span> studying Information Science at Cornell 👩🏻‍💻</h4>
+          <h4 class = "long" style="margin-bottom:35px;">Aspiring <span id="type"></span><span id="blinker">|</span> studying Information Science at Cornell 👩🏻‍💻</h4>
           </div>
 
           <ul class="header-links--inline">
@@ -684,7 +684,9 @@ transition: 3s;
         }
       }
 
-
+      .long{
+        width:1000px
+      }
 
       @media only screen and (max-width: 1090px) {
         #imac {
@@ -692,6 +694,11 @@ transition: 3s;
           height: 200px;
           margin: 6px 0;
         }
+
+        .long{
+          width:350px
+        }
+
       }
     </style>
 
