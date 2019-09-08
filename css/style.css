@@ -196,10 +196,8 @@ img {
 
 .avatar{
   width: 100%;
-  /* box-shadow: 0 0 0 0 rgba(0,0,0,0.24), 0 9px 25px 1px rgba(0,0,0,0.18), 0 10px 45px 0 rgba(0,0,0,0.12); */
-  margin-bottom:40px;
   position: relative;
-  top:-40px;
+  top:-75px;
 }
 
 .card-first{
