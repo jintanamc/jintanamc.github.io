@@ -235,7 +235,7 @@ Persuading people through technology is the next social revolution -BJ Fogg-->
       <br /><br />
       <h4> Look and Feel</h4>
       <br />
-  <img class="screens"  src="images/designboard.png">
+      <img class="screens" src="images/designboard.png">
 
       <br /><br />
 
@@ -244,194 +244,196 @@ Persuading people through technology is the next social revolution -BJ Fogg-->
 
       <br /><br />
       <h4>Final Product</h4>
-<br />
+      <br />
       <div class="row">
         <div class="column">
-          <img class="screens"  src="images/projtracker/4340_Mockups-01.png">
-          <img class="screens"  src="images/projtracker/4340_Mockups-02.png">
-          <img class="screens"  src="images/projtracker/4340_Mockups-03.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-01.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-09.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-03.png">
+
         </div>
 
         <div class="column">
-          <img class="screens"  src="images/projtracker/4340_Mockups-04.png">
-          <img class="screens"  src="images/projtracker/4340_Mockups-05.png">
-          <img class="screens"   src="images/projtracker/4340_Mockups-06.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-07.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-02.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-05.png">
+
         </div>
 
         <div class="column">
-          <img class="screens"  src="images/projtracker/4340_Mockups-07.png">
-          <img class="screens"  src="images/projtracker/4340_Mockups-08.png">
-          <img class="screens"  src="images/projtracker/4340_Mockups-09.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-10.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-06.png">
         </div>
 
         <div class="column">
-          <img class="screens"  src="images/projtracker/4340_Mockups-10.png">
-          <img class="screens"  src="images/projtracker/4340_Mockups-11.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-08.png">
+          <img class="screens" src="images/projtracker/4340_Mockups-04.png">
+          <!-- <img class="screens"  src="images/projtracker/4340_Mockups-11.png"> -->
         </div>
-  </div>
+      </div>
 
-        <br />
-        <br />
+      <br />
+      <br />
 
-        <p>We used Vue, custom CSS, JSON and Javascript to implement the app.</p>
+      <p>We used Vue, custom CSS, JSON and Javascript to implement the app.</p>
 
-        <br />
-        <br />
-        <p style="font-weight: bold">Features:</p>
-        <div class="myDivElement">
-          <ul>
-            <li> Emojis change based on the last time you updated the project </li>
-            <li> Integration with Buefy.js calendar to display calendar view</li>
-            <li> Users can choose preset units of measurement, none, or custom</li>
-        </div>
-
-
-        <br /><br />
-        <h4>Reflection and Future Considerations</h4>
-        <br />
-        <p>This app was my first exploration of behavior design. Some of the choices we made, such as the emojis, really resonated with our interviewees during beta testing. These details are what keep users engaged. <br />
-          If we were to work on this project further, it would be interesting to add project tracking analytics as an onboarding experience. <b>The app currently is only supported for mobile, be on the lookout for a web version!</b></p>
-        <br /><br />
-    <br /><br />
-
-        <h2 style="text-align: center"> <a href="https://tm-project-tracker.herokuapp.com/">View the app</a></h2>
-
-        <br /><br />
+      <br />
+      <br />
+      <p style="font-weight: bold">Features:</p>
+      <div class="myDivElement">
+        <ul>
+          <li> Emojis change based on the last time you updated the project </li>
+          <li> Integration with Buefy.js calendar to display calendar view</li>
+          <li> Users can choose preset units of measurement, none, or custom</li>
+      </div>
 
 
+      <br /><br />
+      <h4>Reflection and Future Considerations</h4>
+      <br />
+      <p>This app was my first exploration of behavior design. Some of the choices we made, such as the emojis, really resonated with our interviewees during beta testing. These details are what keep users engaged. <br />
+        If we were to work on this project further, it would be interesting to add project tracking analytics as an onboarding experience. <b>The app currently is only supported for mobile, be on the lookout for a web version!</b></p>
+      <br /><br />
+      <br /><br />
+
+      <h2 style="text-align: center"> <a href="https://tm-project-tracker.herokuapp.com/">View the app</a></h2>
+
+      <br /><br />
 
 
 
 
 
-        <!-- scoped means only affects this page -->
-        <style scoped>
-          .row {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 8px;
-          }
 
-          /* Create four equal columns that sits next to each other */
+
+      <!-- scoped means only affects this page -->
+      <style scoped>
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 8px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 8px;
+        }
+
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
           .column {
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 8px;
+            flex: 50%;
+            max-width: 50%;
           }
+        }
 
-          .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
           }
-
-
-          /* Responsive layout - makes a two column-layout instead of four columns */
-          @media screen and (max-width: 800px) {
-            .column {
-              flex: 50%;
-              max-width: 50%;
-            }
-          }
-
-          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-          @media screen and (max-width: 600px) {
-            .column {
-              flex: 100%;
-              max-width: 100%;
-            }
-          }
+        }
 
 
 
 
 
+        .right {
+          padding-left: 400px;
+          text-align: left;
+        }
+
+        @media only screen and (max-width: 600px) {
           .right {
-            padding-left: 400px;
-            text-align: left;
+            padding-left: 0;
           }
-
-          @media only screen and (max-width: 600px) {
-            .right {
-              padding-left: 0;
-            }
-          }
+        }
 
 
 
+        .screens {
+          width: 100%;
+          height: auto;
+          max-width: 900px
+        }
+
+
+        @media only screen and (max-width: 600px) {
           .screens {
-            width: 100%;
-            height:auto;
-            max-width:900px
+            width: 290px;
           }
+        }
 
 
-          @media only screen and (max-width: 600px) {
-            .screens {
-              width: 290px;
-            }
+
+
+        @media only screen and (max-width: 600px) {
+          #myImg {
+            width: 290px;
           }
+        }
 
 
 
 
-          @media only screen and (max-width: 600px) {
-            #myImg {
-              width: 290px;
-            }
+        .myDivElement {
+          display: flex;
+          /* justify-content: center; */
+          width: 100%;
+          position: relative;
+          left: 20px;
+        }
+
+
+        @media only screen and (max-width: 800px) {
+          .info {
+            margin-left: 20px;
+            margin-right: 20px;
           }
+        }
+      </style>
 
 
 
+      <script>
+        window.onscroll = function() {
+          scrollFunction()
+        };
 
-          .myDivElement {
-            display: flex;
-            /* justify-content: center; */
-            width: 100%;
-            position: relative;
-            left: 20px;
+        function scrollFunction() {
+          if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementById("myBtn").style.opacity = "1";
+          } else {
+            document.getElementById("myBtn").style.opacity = "0";
           }
+        }
 
+        function topFunction() {
 
-          @media only screen and (max-width: 800px) {
-            .info {
-              margin-left: 20px;
-              margin-right: 20px;
-            }
+          var target = $('#hi');
+          if (target.length) {
+            var top = target.offset().top;
+            $('html,body').animate({
+              scrollTop: top
+            }, 500);
+            return false;
           }
-        </style>
+        }
+      </script>
 
 
-
-        <script>
-          window.onscroll = function() {
-            scrollFunction()
-          };
-
-          function scrollFunction() {
-            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-              document.getElementById("myBtn").style.opacity = "1";
-            } else {
-              document.getElementById("myBtn").style.opacity = "0";
-            }
-          }
-
-          function topFunction() {
-
-            var target = $('#hi');
-            if (target.length) {
-              var top = target.offset().top;
-              $('html,body').animate({
-                scrollTop: top
-              }, 500);
-              return false;
-            }
-          }
-        </script>
-
-
-        <script src="assets/js/jquery.waypoints.min.js"></script>
-        <script src="assets/js/waypoints.js"></script>
+      <script src="assets/js/jquery.waypoints.min.js"></script>
+      <script src="assets/js/waypoints.js"></script>
 
 
 
