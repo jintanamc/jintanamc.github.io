@@ -257,17 +257,28 @@ Overall, we see the value of our app compared to alternatives to be the categori
 
 <br /><br />
 <h4>Final Product</h4>
+
+<div class="row">
+  <div class="column">
 <img class = "screens" src ="images/projtracker/4340_Mockups-01.png">
 <img class = "screens" src ="images/projtracker/4340_Mockups-02.png">
 <img class = "screens" src ="images/projtracker/4340_Mockups-03.png">
 <img class = "screens" src ="images/projtracker/4340_Mockups-04.png">
 <img class = "screens" src ="images/projtracker/4340_Mockups-05.png">
+</div>
+
+<div class="column">
 <img class = "screens" src ="images/projtracker/4340_Mockups-06.png">
 <img class = "screens" src ="images/projtracker/4340_Mockups-07.png">
 <img class = "screens" src ="images/projtracker/4340_Mockups-08.png">
 <img class = "screens" src ="images/projtracker/4340_Mockups-09.png">
+</div>
+
+<div class="column">
 <img class = "screens" src ="images/projtracker/4340_Mockups-10.png">
 <img class = "screens" src ="images/projtracker/4340_Mockups-11.png">
+</div>
+</div>
 
 <br />
 
@@ -304,6 +315,26 @@ Overall, we see the value of our app compared to alternatives to be the categori
 
 <!-- scoped means only affects this page -->
 <style scoped>
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
 
 .right{
   padding-left: 400px;
